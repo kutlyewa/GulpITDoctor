@@ -15,8 +15,8 @@
 5. Писать свой код и наслаждаться автоматической сборкой проекта.
 
 ## Ссылки
-[Сборка проекта на Gulp](https://github.com/kutlyewa/Gulp) 
-[Документация Gulp на русском языке](https://webdesign-master.ru/blog/docs/gulp-documentation.html)
+[Сборка проекта на Gulp](https://github.com/kutlyewa/Gulp)  
+[Документация Gulp на русском языке](https://webdesign-master.ru/blog/docs/gulp-documentation.html)  
 
 ## Установленные NPM пакеты
 [gulp](https://gulpjs.com/docs/en/getting-started/quick-start) Сборщик Gulp  
