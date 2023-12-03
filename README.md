@@ -19,7 +19,8 @@
 [Документация Gulp на русском языке](https://webdesign-master.ru/blog/docs/gulp-documentation.html)
 
 ## Установленные NPM пакеты
-[gulp](https://gulpjs.com/docs/en/getting-started/quick-start) Сборщик Gulp      
+[gulp](https://gulpjs.com/docs/en/getting-started/quick-start) Сборщик Gulp
+
 [gulp-less]([https://](https://www.npmjs.com/package/gulp-less)) Кампиляция Less файлов  
 [gulp-rename](https://www.npmjs.com/package/gulp-rename) Переименоввывает файлы  
 [gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css) Минификация и оптимизация CSS файлов   
