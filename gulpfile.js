@@ -1,6 +1,4 @@
 const gulp = require('gulp');
-const less = require('gulp-less');//преобразует в CSS-файл
-const rename = require("gulp-rename");//переименовывать файлы
 const cleanCSS = require('gulp-clean-css');//минифицирует CSS-файлы
 const babel = require('gulp-babel');//транспилирует код в старый формат
 const uglify = require('gulp-uglify'); //делает код нечитаемым (обфусцирование кода)
@@ -11,7 +9,7 @@ const imagemin = require('gulp-imagemin');//сжатие изображений
 const htmlmin = require('gulp-htmlmin');//минифицирует HTML-файлы
 const size = require('gulp-size');//посмотреть размер файлов в консоли
 const newer = require('gulp-newer');//позволяет отслеживать только новые файлы
-const browserSync = require('browser-sync').create();//
+const browserSync = require('browser-sync').create();//синхронизируйте несколько браузеров и устройств
 const del = require('del');//удаление файлов
 
 //структура проекта
@@ -21,7 +19,7 @@ const paths = {
     dest: 'dist/'
   },
   styles: {
-    src: 'src/styles/**/*.less',
+    src: 'src/styles/**/*.css',
     dest: 'dist/css/'
   },
   scripts: {
@@ -55,16 +53,12 @@ function html() {
 function styles() {
   return gulp.src(paths.styles.src)
   .pipe(sourcemaps.init())
-  .pipe(less())
+  .pipe(concat('style.min.css'))
   .pipe(autoprefixer({
     cascade: false
   }))
   .pipe(cleanCSS({
     level: 2
-  }))
-  .pipe(rename({
-    basename: 'style',
-    suffix: '.min'
   }))
   .pipe(sourcemaps.write('.'))
   .pipe(size({
@@ -77,18 +71,18 @@ function styles() {
 //обработка скриптов
 function scripts() {
   return gulp.src(paths.scripts.src)
-  .pipe(sourcemaps.init())
-  .pipe(babel({
+  .pipe(sourcemaps.init())//карта источника
+  .pipe(babel({           //транспилирует код в старый формат
     presets: ['@babel/env']
   }))
-  .pipe(uglify())
-  .pipe(concat('script.min.js'))
-  .pipe(sourcemaps.write('.'))
-  .pipe(size({
+  .pipe(uglify())         //обфусцирование кода
+  .pipe(concat('script.min.js'))//переименоввывает
+  .pipe(sourcemaps.write('.'))   //карта источника
+  .pipe(size({                  //размер файлов в консоли
     showFiles: true
   }))
   .pipe(gulp.dest(paths.scripts.dest))
-  .pipe(browserSync.stream())
+  .pipe(browserSync.stream())      //Синхронизирует
 }
 
 //обработка изображений
