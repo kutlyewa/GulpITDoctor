@@ -41,8 +41,8 @@
 [PayPal](https://)  
 
 ### Контакты ITfrilanc
-[YouTube](https://)
-[Telegram](https://)
-[GitHub](https://github.com/kutlyewa?tab=repositories)
-[Vk](https://)
-[Instagram](https://)
+[YouTube](https://)  
+[Telegram](https://)  
+[GitHub](https://github.com/kutlyewa?tab=repositories)  
+[Vk](https://)  
+[Instagram](https://)  
