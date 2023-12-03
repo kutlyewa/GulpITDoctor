@@ -29,21 +29,11 @@
 [gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps) Карта источника  
 [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer/v/8.0.0) Добавит префиксы в CSS-стили для разных браузеров  
 [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin/v/7.1.0) Cжатие изображений  
-
-
-
-
-
-
-[gulp-htmlmin](https://www.npmjs.com/package/gulp-htmlmin) Минифицирует HTML-файлы
-
-[gulp-size](https://www.npmjs.com/package/gulp-size/v/4.0.1) Посмотреть размер файлов в консоли
-
-[gulp-newer](https://www.npmjs.com/package/gulp-newer) Позволяет отслеживать только новые файлы 
-
-[browser-sync](https://www.npmjs.com/package/browser-sync) Синхронизируйте несколько браузеров и устройств
-
-[del](https://www.npmjs.com/package/del) Удаление каталогов и файлов    
+[gulp-htmlmin](https://www.npmjs.com/package/gulp-htmlmin) Минифицирует HTML-файлы  
+[gulp-size](https://www.npmjs.com/package/gulp-size/v/4.0.1) Посмотреть размер файлов в консоли  
+[gulp-newer](https://www.npmjs.com/package/gulp-newer) Позволяет отслеживать только новые файлы  
+[browser-sync](https://www.npmjs.com/package/browser-sync) Синхронизируйте несколько браузеров и устройств  
+[del](https://www.npmjs.com/package/del) Удаление каталогов и файлов  
 
 ### Автору на кофе
 Сбер VISA  
