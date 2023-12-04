@@ -9,7 +9,7 @@
 
 ## Инструкция:
 1. Скачать все файлы в любую директорию
-2. git clone https://github.com/kutlyewa/Gulp.git
+2. git clone https://github.com/kutlyewa/GulpITDoctor.git
 3. Ввести в терминале команду: npm i (должен быть установлен node.js)
 4. Выполнить команду: gulp (запуск таска default)
 5. Писать свой код и наслаждаться автоматической сборкой проекта.
