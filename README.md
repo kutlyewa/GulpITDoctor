@@ -3,9 +3,13 @@
 С помощью этих файлов вы можете быстро настроить сборку вашего проекта на Gulp.
 
 ## Структура каталогов для размещения файлов стилей и скриптов:
->./src/styles/\*\*/\*.less  
->./src/scripts/\*\*/\*.js  
->./src/images/\*\*/\*
+>./src/css/\*\*/\*.css  
+>./src/js/\*\*/\*.js  
+>./src/img/\*\*/\*.jpg  
+>./src/img/\*\*/\*.jpeg  
+>./src/img/\*\*/\*.png  
+>./src/img/\*\*/\*.svg  
+>./src/resources/\*\*/\*  
 
 ## Инструкция:
 1. Скачать все файлы в любую директорию
@@ -20,7 +24,6 @@
 
 ## Установленные NPM пакеты
 [gulp](https://gulpjs.com/docs/en/getting-started/quick-start) Сборщик Gulp  
-[gulp-rename](https://www.npmjs.com/package/gulp-rename) Переименоввывает файлы  
 [gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css) Минификация и оптимизация CSS файлов  
 [gulp-babel](https://www.npmjs.com/package/gulp-babel) Транспилирует код в старый формат  
 [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) Делает код нечитаемым (обфусцирование кода)  
